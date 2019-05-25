@@ -1,7 +1,8 @@
 # Comet Blue Thermostat for ESP32
 
 This library is made for this kind of bluetooth thermostats
-![RGB LED Strip Driver Module Shield](https://raw.githubusercontent.com/MrKrabat/Comet-Blue-Thermostat/master/images/cometblue.jpg "Comet Blue Thermostat with Bluetooth LE 4.0")
+
+![Comet Blue Thermostat with Bluetooth LE 4.0](https://raw.githubusercontent.com/MrKrabat/Comet-Blue-Thermostat/master/images/cometblue.jpg "Comet Blue Thermostat with Bluetooth LE 4.0")
 
 **Since the Bluetooth functions of the ESP32 require a lot of memory space, the memory partitioning of the ESP32 must be changed.**
 
@@ -21,7 +22,7 @@ void setup() {
 
   Serial.print("Connecting to device... ");
   // device pin is 0000 => 0
-  if (!dev.connect("Test", 0)) {
+  if (!dev.connect("Identifier", 0)) {
     Serial.println("FAILED");
     while (1) {
       delay(100);
